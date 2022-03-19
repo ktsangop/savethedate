@@ -1,3 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: rgb(221,240,238);
+  background: radial-gradient(circle, rgba(221,240,238,1) 0%, rgba(239,255,240,1) 100%);
+}
+
+.eng-handwrite {
+  font-family: 'The Nautigal', cursive;
+}
+
+.greek-sans {
+  font-family: 'GFS Neohellenic', sans-serif;
+}
+
+.main-container {
+  text-align: center; 
+}
+
+.main-title {
+  font-size: 4.5rem;
+  margin: 1rem;
+}
+.sub-title {
+  font-size: 2.6rem;
+  margin: 1rem;
+}
+
 .map-container {
   overflow:hidden;
   padding-bottom:56.25%;

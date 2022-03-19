@@ -2,25 +2,36 @@
 <html>
   <head>
     <title>Add Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+    
     <script src="./index.js"></script>
   </head>
   <body>
-    <h3>Save the Date!</h3>
+    <header></header>
+    <main class="main-container greek-sans">
+      <h1 class="eng-handwrite main-title">Save the Date!</h1>
     
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCucx8l97Zx5CGexRd-B4zwziAYnAJBYic&q=place_id:ChIJdSFun3FAWRMRNr32dWxUTQM&zoom=10"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-      </iframe>
-    </div>
-    <!-- JS API 
-      <div id="map"></div>
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCucx8l97Zx5CGexRd-B4zwziAYnAJBYic&callback=initMap&v=weekly"
-        async
-      ></script>
-    -->
-    
+      <h2 class="eng-handwrite sub-title">Kostas & Villy<br>are getting married!</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCucx8l97Zx5CGexRd-B4zwziAYnAJBYic&q=place_id:ChIJdSFun3FAWRMRNr32dWxUTQM&zoom=10"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </main>
+
+    <footer></footer>
   </body>
 </html>
+
+      <!-- JS API 
+        <div id="map"></div>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCucx8l97Zx5CGexRd-B4zwziAYnAJBYic&callback=initMap&v=weekly"
+          async
+        ></script>
+      -->
