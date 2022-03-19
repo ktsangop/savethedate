@@ -1,10 +1,20 @@
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Add Map</title>
 
-<head>
-</head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <h3>Save the Date!</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
 
-<body>
-  <h1>Save the date!</h1>
-</body>
-
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCucx8l97Zx5CGexRd-B4zwziAYnAJBYic&callback=initMap&v=weekly"
+      async
+    ></script>
+  </body>
 </html>
