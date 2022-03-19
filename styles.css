@@ -5,11 +5,17 @@ body {
 }
 
 .eng-handwrite {
-  font-family: 'The Nautigal', cursive;
+  font-weight: normal;
+  font-family: 'Satisfy', cursive;
+  /* font-family: 'Sacramento', cursive; */
+  /* font-family: 'The Nautigal', cursive; */
 }
 
 .greek-sans {
-  font-family: 'GFS Neohellenic', sans-serif;
+  font-weight: normal;
+  font-family: 'Caudex', serif;
+  /* font-family: 'Literata', serif; */
+  /* font-family: 'GFS Neohellenic', sans-serif; */
 }
 
 .main-container {
@@ -32,10 +38,33 @@ body {
   height:0;
 }
 
-.map-container iframe{
+.map-container iframe {
   left:0;
   top:0;
   height:100%;
   width:100%;
   position:absolute;
 }
+
+.paragraph {
+  font-size: 1.2rem;
+  max-width: 500px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .map-container iframe {
+  height: 70%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  }
+}
+/* 
+font-family: 'Caudex', serif;
+font-family: 'GFS Neohellenic', sans-serif;
+font-family: 'Literata', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sacramento', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'The Nautigal', cursive; */
