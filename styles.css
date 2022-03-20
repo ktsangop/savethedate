@@ -5,6 +5,14 @@ body {
   background-color: #36312b;
 }
 
+.separator {
+  width: 300px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+  margin: 1.5rem auto;
+}
+
 .color-body {
   background: rgb(221,240,238);
   background: radial-gradient(circle, rgba(221,240,238,1) 0%, rgba(239,255,240,1) 100%);
@@ -17,9 +25,11 @@ body {
 
 .eng-handwrite {
   font-weight: normal;
-  font-family: 'Satisfy', cursive;
+  /* font-family: 'Satisfy', cursive; */
   /* font-family: 'Sacramento', cursive; */
   /* font-family: 'The Nautigal', cursive; */
+  font-family: 'Montez', cursive;
+  color: #dec6ff;
 }
 
 .greek-sans {
@@ -42,7 +52,10 @@ body {
 
 .date-container {
   margin: 1rem;
-  border: 4px groove #ffffff5e;
+  border: 3px groove #ffffff21;
+  border-radius: 38px;
+  border-left: none;
+  border-right: none;
 }
 @media screen and (min-width: 550px) {
   .date-container {
@@ -80,7 +93,7 @@ body {
 
 
 .main-title {
-  font-size: 3.5rem;
+  font-size: 4.2rem;
   margin: 1rem;
 }
 
@@ -105,9 +118,10 @@ body {
 
 
 .content-section > h3 {
+  margin-top: 1.5rem;
   margin-bottom: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  /* font-weight: bold; */
 }
 
 
