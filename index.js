@@ -1,14 +1,26 @@
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.036 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
+function updateTimer() {
+  future = Date.parse("Jul 30, 2022 18:00:00");
+  now = new Date();
+  diff = future - now;
+
+  days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  hours = Math.floor(diff / (1000 * 60 * 60));
+  mins = Math.floor(diff / (1000 * 60));
+  secs = Math.floor(diff / 1000);
+
+  d = days;
+  h = hours - days * 24;
+  m = mins - hours * 60;
+  s = secs - mins * 60;
+
+  document.getElementById("timer").innerHTML = `
+    <span>${d}</span> <span>Days</span>
+    <span>${h}</span> <span>Hours</span>
+    <span>${m}</span> <span>Minutes</span>
+    <span>${s}</span> <span>Seconds</span>
+  `;
+}
+
+window.onload = function () {
+  setInterval('updateTimer()', 1000);
 }
