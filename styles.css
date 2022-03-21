@@ -292,3 +292,30 @@ header {
 .open .line-menu.end {
   transform: rotate(-90deg) translateX(-3px);
 }
+
+#timer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.flex1 {
+  flex: 1 1 auto;
+}
+
+.flex1:not(:last-child) {
+  border-right: 1px solid #ffffff2e;
+}
+
+.fa-icon {
+  width: 1.2rem;
+  filter: invert(1);
+}
+
+.contact-link {
+  white-space: nowrap;
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color:white !important;
+}
