@@ -47,10 +47,10 @@ body {
 
 .date-container {
   margin: 1rem;
-  border: 3px groove #ffffff21;
+  /* border: 3px groove #ffffff21;
   border-radius: 38px;
   border-left: none;
-  border-right: none;
+  border-right: none; */
 }
 @media screen and (min-width: 550px) {
   .date-container {
@@ -135,33 +135,45 @@ font-family: 'The Nautigal', cursive; */
 }
 #best {
   background-image: url(page_3.jpg);
+  background-position-x: right;
+  background-position-y: bottom;
 }
 #ceremony {
   background-image: url(page_4.jpg);
+  background-position-y: center;
 }
 #party {
-  background-image: url(page_5.jpg);
+  background-image: url(page_5.webp);
+  background-position-y: center;
+}
+#map {
+  background-image: url(map.jpg);
 }
 #stay {
   background-image: url(page_6.jpg);
+  background-position-x: center;
+  background-position-y: top;
 }
 #rsvp {
   background-image: url(page_7.jpg);
+  background-position-y: bottom;
 }
 #hastag {
   background-image: url(page_8.jpg);
+  background-position-y: center;
 }
 #honeymoon {
   background-image: url(page_9.jpg);
+  background-position-x: left;
 }
 #contact {
   background-image: url(page_10.jpg);
 }
-#scan {
-  background-image: url(page_11.jpg);
-}
+
 #seeyou {
   background-image: url(page_12.jpg);
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 header {
