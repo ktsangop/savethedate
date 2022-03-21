@@ -24,10 +24,14 @@ function updateTimer() {
 window.onload = function () {
   setInterval('updateTimer()', 1000);
   document.querySelector(`#linksContainer`).addEventListener('click', () => {
-    document.querySelector(`#theHeader`).classList.remove('open');
+    if (window.innerWidth < 768) {
+      document.querySelector(`#theHeader`).classList.remove('nav-open');
+      document.querySelector(`.wrapper-menu`).classList.remove('open');
+    }
   });
 }
 
 function menuToggle() {
-  document.querySelector(`#theHeader`).classList.toggle('open');
+  document.querySelector(`#theHeader`).classList.toggle('nav-open');
+  document.querySelector(`.wrapper-menu`).classList.toggle('open');
 }
