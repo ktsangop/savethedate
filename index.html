@@ -15,11 +15,28 @@
     <script src="./index.js"></script>
   </head>
   <body >
-    <!-- <div class="back-static"></div> -->
-    <header></header>
+    <header id="theHeader">
+      <div class="menu-btn" onclick="menuToggle()"><button>X</button></div>
+
+      <div id="linksContainer" class="links">
+        <a href="#date">Date</a>
+        <a href="#families">Familes</a>
+        <a href="#best">Best Couple</a>
+        <a href="#ceremony">The Ceremony</a>
+        <a href="#party">The Party</a>
+        <a href="#stay">Accomodation</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#hastag">#Hashtag</a>
+        <a href="#honeymoon">Honeymoon</a>
+        <a href="#contact">Contact</a>
+        <a href="#scan">Scan code</a>
+        <a href="#seeyou">See you!</a>
+      </div>
+
+    </header>
     <main class="main-container greek-sans">
       <div class="scroll-snap">
-        <div class="back-static" id="page_1"></div>
+        <div class="back-static" id="date"></div>
         <div>
         <h1 class="eng-handwrite main-title">Save the Date!</h1>
         
@@ -36,7 +53,7 @@
       </div>
       
       <div class="scroll-snap">
-        <div class="back-static" id="page_2"></div>
+        <div class="back-static" id="families"></div>
         <div class="content-section">
           <hr class="separator">
           <h3 class="eng-handwrite">The Families</h3>
@@ -48,7 +65,7 @@
       </div>
 
       <div class="scroll-snap">
-        <div class="back-static" id="page_3"></div>
+        <div class="back-static" id="best"></div>
         <div class="content-section">
           <hr class="separator">
           <h3 class="eng-handwrite">Best man & woman</h3>
@@ -58,7 +75,7 @@
       </div>
 
       <div class="scroll-snap">
-        <div class="back-static" id="page_4"></div>
+        <div class="back-static" id="ceremony"></div>
         <div class="content-section">
           <hr class="separator">
           <h3 class="eng-handwrite">The wedding ceremony</h3>
@@ -69,7 +86,7 @@
       </div>
       
       <div class="scroll-snap">
-        <div class="back-static" id="page_5"></div>
+        <div class="back-static" id="party"></div>
         <div class="content-section">
           <hr class="separator">
           <h3 class="eng-handwrite">The BIG party</h3>
@@ -85,7 +102,7 @@
       </div>
 
     <div class="scroll-snap">
-      <div class="back-static" id="page_6"></div>
+      <div class="back-static" id="stay"></div>
       <div class="content-section">
         <hr class="separator">
         <p class="greek-sans">Κι επειδή θέλουμε να σας κάνουμε τη ζωή εύκολη, για πληροφορίες σχετικά με τη διαμονή:<br>
@@ -98,7 +115,7 @@
     </div>
 
     <div class="scroll-snap">
-      <div class="back-static" id="page_7"></div>
+      <div class="back-static" id="rsvp"></div>
       <div class="content-section">
         <hr class="separator">
         <h3 class="eng-handwrite">Répondez s'il vous plaît</h3>
@@ -109,7 +126,7 @@
     </div>
     
     <div class="scroll-snap">
-      <div class="back-static" id="page_8"></div>
+      <div class="back-static" id="hastag"></div>
       <div class="content-section">
         <hr class="separator">
         <h3 class="eng-handwrite">Let’s make it viral!</h3>
@@ -124,7 +141,7 @@
     </div>
 
     <div class="scroll-snap">
-      <div class="back-static" id="page_9"></div>
+      <div class="back-static" id="honeymoon"></div>
       <div class="content-section">
         <hr class="separator">
         <h3 class="eng-handwrite">Honeymoon Fund</h3>
@@ -134,7 +151,7 @@
     </div>
 
     <div class="scroll-snap">
-      <div class="back-static" id="page_10"></div>
+      <div class="back-static" id="contact"></div>
       <div class="content-section">
         <hr class="separator">
         <h3 class="eng-handwrite">Get in touch!</h3>
@@ -144,7 +161,7 @@
     </div>
     
     <div class="scroll-snap">
-      <div class="back-static" id="page_11"></div>
+      <div class="back-static" id="scan"></div>
       <hr class="separator">
       <div class="content-section"><h3 class="eng-handwrite">Scan here and save our wedsite!</h3>
         <img style="height: 20vw; margin-top: 1rem;" src="./qr.svg">
@@ -153,7 +170,7 @@
     </div>
     
     <div class="scroll-snap">
-      <div class="back-static" id="page_12"></div>
+      <div class="back-static" id="seeyou"></div>
       <div class="content-section">
         <hr class="separator">
         <h3 class="eng-handwrite" style="font-size:4rem;">See you all there!</h3>

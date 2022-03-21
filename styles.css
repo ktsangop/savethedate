@@ -127,39 +127,115 @@ font-family: 'Sacramento', cursive;
 font-family: 'Satisfy', cursive;
 font-family: 'The Nautigal', cursive; */
 
-#page_1 {
+#date {
   background-image: url(page_1.jpg);
 }
-#page_2 {
+#families {
   background-image: url(page_2.jpg);
 }
-#page_3 {
+#best {
   background-image: url(page_3.jpg);
 }
-#page_4 {
+#ceremony {
   background-image: url(page_4.jpg);
 }
-#page_5 {
+#party {
   background-image: url(page_5.jpg);
 }
-#page_6 {
+#stay {
   background-image: url(page_6.jpg);
 }
-#page_7 {
+#rsvp {
   background-image: url(page_7.jpg);
 }
-#page_8 {
+#hastag {
   background-image: url(page_8.jpg);
 }
-#page_9 {
+#honeymoon {
   background-image: url(page_9.jpg);
 }
-#page_10 {
+#contact {
   background-image: url(page_10.jpg);
 }
-#page_11 {
+#scan {
   background-image: url(page_11.jpg);
 }
-#page_12 {
+#seeyou {
   background-image: url(page_12.jpg);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #232623ed;
+  z-index: 1;
+  transform: translateX(300px);
+  transition: 0.3s ease-in-out;
+}
+
+.open {
+  transform: translateX(0px);
+  transition: 0.3s ease-in-out;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.links > a {
+  padding: 0.2rem 1rem;
+  color: #dec6ff !important;
+  font-family: 'Montez', cursive;
+  font-size: 1.7rem;
+  text-decoration: none;
+  width: 60%;
+  text-align: center;
+  margin: 5px 5px;
+}
+
+.links > a:focus {
+  color: #fff2c6 !important;
+  border: 5px dotted #fff2c647;
+  border-style: groove;
+  margin: 0 !important;
+}
+
+.links > a:hover {
+  color: #fff2c6 !important;
+  border: 5px dotted #fff2c647;
+  border-style: groove;
+  margin: 0 !important;
+}
+
+.links > a:active {
+  color: #eeb413 !important;
+}
+
+.menu-btn {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.menu-btn button {
+  background-color: transparent;
+  color: white !important;
+  border: 0;
+  margin: 0;
+  z-index: 1;
+  width:45px;
+  height:45px;
+  cursor: pointer;
+}
+
+.menu-btn button:active {
+  color: #eeb413 !important;
+  background-color: #dec6ff88;
 }

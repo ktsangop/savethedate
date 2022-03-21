@@ -23,4 +23,11 @@ function updateTimer() {
 
 window.onload = function () {
   setInterval('updateTimer()', 1000);
+  document.querySelector(`#linksContainer`).addEventListener('click', () => {
+    document.querySelector(`#theHeader`).classList.remove('open');
+  });
+}
+
+function menuToggle() {
+  document.querySelector(`#theHeader`).classList.toggle('open');
 }
