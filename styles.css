@@ -325,6 +325,10 @@ header {
   filter: invert(1);
 }
 
+.fa-icon, .large {
+  width: 1.5rem;
+}
+
 .contact-link {
   white-space: nowrap;
   margin-left: 0.5rem;
