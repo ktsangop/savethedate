@@ -1,4 +1,7 @@
 window.onload = function () {
+  if (window.location.href.includes('#')) {
+    window.location.href = window.location.href.split('#')[0];
+  }
   window._days = document.querySelector(`.days`);
   window._hours = document.querySelector(`.hours`);
   window._mins = document.querySelector(`.minutes`);
