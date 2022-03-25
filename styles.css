@@ -331,8 +331,8 @@ header {
 
 .contact-link {
   white-space: nowrap;
-  margin-left: 0.5rem;
-  text-decoration: none;
+/*   margin-left: 0.5rem; */
+  text-decoration: none !important;
   color:white !important;
 }
 
@@ -356,4 +356,8 @@ header {
 
 .map-link:active {
   color: #eeb413 !important;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
 }
