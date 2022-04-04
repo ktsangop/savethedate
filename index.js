@@ -1,3 +1,5 @@
+history.scrollRestoration = "manual";
+
 window.onload = function () {
   if (window.location.href.includes('#')) {
     window.location.href = window.location.href.split('#')[0];
@@ -15,6 +17,19 @@ window.onload = function () {
       document.querySelector(`.wrapper-menu`).classList.remove('open');
     }
   });
+
+  if (!!window.sessionStorage) {
+    if (window.sessionStorage.getItem('hasScrolled') !== 'true') {
+      window._hasScrolledInterval = setInterval('checkScrolled()', 1000);
+    } else {
+      document.querySelector(`#scroll-me`).classList.add('d-none');
+    }
+  }
+}
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+  return;
 }
 
 function menuToggle() {
@@ -41,4 +56,12 @@ function updateTimer() {
   window._hours.innerHTML = h;
   window._mins.innerHTML = m;
   window._secs.innerHTML = s;
+}
+
+function checkScrolled() {
+  if (window.scrollY > 450) {
+    clearInterval(window._hasScrolledInterval);
+    document.querySelector(`#scroll-me`).classList.add('d-none');
+    window.sessionStorage.setItem('hasScrolled', 'true');
+  }
 }

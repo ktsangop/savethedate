@@ -361,3 +361,24 @@ header {
 .mr-2 {
   margin-right: 0.5rem;
 }
+
+.animate-1 {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: small-bounce 4s ease-in 0s infinite;
+}
+
+@keyframes small-bounce {
+  0%, 100% {transform: translateY(0); opacity: 0}
+  20% {transform: translateY(0); opacity: 0} 
+  40% {transform: translateY(0); opacity: 0} 
+  60% {transform: translateY(0); opacity: 0} 
+  80% {transform: translateY(0); opacity: 0} 
+  90% {transform: translateY(10px); opacity: 1}
+}
+
+.d-none {
+  display: none;
+}
